@@ -1,37 +1,18 @@
-import React from 'react';
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-
-
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      dropdownOpen: false
-    };
-  }
-
-  toggle() {
-    this.setState({
-      dropdownOpen: !this.state.dropdownOpen
-    });
-  }
-
-  render() {
-    return (
-      <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle caret>
-          Button Dropdown
-        </DropdownToggle>
-        <DropdownMenu>
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem disabled>Action</DropdownItem>
-          <DropdownItem>Another Action</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Another Action</DropdownItem>
-        </DropdownMenu>
-      </ButtonDropdown>
-    );
+import React, {Component} from 'react';
+//import css
+import './App.css';
+//importing addition from the newly made folder
+import Addition from './Addition/Addition.js';
+class App extends Component{
+  render(){
+    return(
+      //importing css
+        <div className="App">
+      <h1> hi, this is our startup</h1>
+      <p> members are 5 yet </p>
+      <Addition> </Addition>
+      </div>
+      );
   }
 }
+export default App;
