@@ -1,11 +1,10 @@
 import React from 'react';
-const Addition = () =>{
+const Addition = (props) =>{
 
-	return (
-		<div>
-			<p className = 'f3 dim underline pa3 pointer'> 
-				<a href=" https://4jerry4.github.io/project404/" className = 'black '> About 5 Of Us </a>
+	return(
+			<p>
+			i am {props.name} and im {props.age} years old.
 			</p>
-		</div>
+	   
 )};
 export default Addition;

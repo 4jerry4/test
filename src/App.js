@@ -13,7 +13,16 @@ class App extends Component{
         <div className="App">
       <h1> hi, this is our startup</h1>
       <p> members are 5 yet </p>
-      <Addition> </Addition>
+      <Addition name="aman" age="19"> </Addition>
+      <Addition name="yatin" age="19"> </Addition>
+      <Addition name="kashiv" age="19"> </Addition>
+      <Addition name="vaibhav" age="19"> </Addition>
+      <Addition name="jerry" age="19"> </Addition>
+      
+   
+      
+      
+
       </div>
       );
   }
