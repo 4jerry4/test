@@ -1,37 +1,30 @@
-import React from 'react';
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import React, {Component} from 'react';
+//import css
+import './App.css';
+//importing addition from the newly made folder
+import Addition from './Addition.js';
+//importing a cool css library!!
+import 'tachyons';
 
+class App extends Component{
+  render(){
+    return(
+      //importing css
+        <div className="App">
+      <h1> hi, this is our startup</h1>
+      <p> members are 5 yet </p>
+      <Addition name="aman" age="19"> </Addition>
+      <Addition name="yatin" age="19"> </Addition>
+      <Addition name="kashiv" age="19"> </Addition>
+      <Addition name="vaibhav" age="19"> </Addition>
+      <Addition name="jerry" age="19"> </Addition>
+      
+   
+      
+      
 
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      dropdownOpen: false
-    };
-  }
-
-  toggle() {
-    this.setState({
-      dropdownOpen: !this.state.dropdownOpen
-    });
-  }
-
-  render() {
-    return (
-      <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle caret>
-          Button Dropdown
-        </DropdownToggle>
-        <DropdownMenu>
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem disabled>Action</DropdownItem>
-          <DropdownItem>Another Action</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Another Action</DropdownItem>
-        </DropdownMenu>
-      </ButtonDropdown>
-    );
+      </div>
+      );
   }
 }
+export default App;
